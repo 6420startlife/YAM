@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".view.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/logo">
+
+            <TextView
+                style="@style/title_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="5dp" />
+        </FrameLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/short_dimen"
+                app:layout_constraintBottom_toTopOf="@+id/tvOr"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_dimen"
+                    android:background="@drawable/blue_border_rounded_cornwe">
+                    <ImageView
+                        android:id="@+id/ivEmail"
+                        android:layout_width="@dimen/medium_dimen"
+                        android:layout_height="@dimen/medium_dimen"
+                        android:layout_marginStart="@dimen/medium_dimen"
+                        android:src="@drawable/email"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        style="@style/input_login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/string_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/short_dimen"
+                        android:paddingVertical="@dimen/short_dimen"
+                        android:layout_marginEnd="@dimen/medium_dimen"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/ivEmail"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/blue_border_rounded_cornwe">
+                    <ImageView
+                        android:id="@+id/ivPassword"
+                        android:layout_width="@dimen/medium_dimen"
+                        android:layout_height="@dimen/medium_dimen"
+                        android:layout_marginStart="@dimen/medium_dimen"
+                        android:src="@drawable/password"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        style="@style/input_login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/string_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/short_dimen"
+                        android:paddingVertical="@dimen/short_dimen"
+                        android:layout_marginEnd="@dimen/medium_dimen"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/ivPassword"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/tvBtnLogin"
+                    style="@style/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/short_dimen"
+                    android:gravity="center"
+                    android:padding="@dimen/short_dimen" />
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    style="@style/text_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/short_dimen"
+                android:text="@string/string_or"
+                android:textSize="@dimen/medium_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivFacebook"
+                    android:layout_width="@dimen/icon_social_media"
+                    android:layout_height="@dimen/icon_social_media"
+                    android:layout_marginEnd="@dimen/short_dimen"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/ivGoogle"
+                    android:layout_width="@dimen/icon_social_media"
+                    android:layout_height="@dimen/icon_social_media"
+                    android:src="@drawable/google_plus" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

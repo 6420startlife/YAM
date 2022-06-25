@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_login">
+        <item name="android:text">@string/title_name</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/ascent</item>
+    </style>
+    <style name="input_login">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    <style name="button_login">
+        <item name="android:background">@drawable/blue_fill__rounded_color</item>
+        <item name="android:text">@string/string_login</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="text_forgot_password">
+        <item name="android:text">@string/string_forgot_password</item>
+        <item name="android:textColor">@color/ascent</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+</resources>

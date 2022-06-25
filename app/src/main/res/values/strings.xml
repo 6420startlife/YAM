@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YAM</string>
+    <string name="title_name">Kết nối thế giới trong tầm tay</string>
+    <string name="string_email">Email</string>
+    <string name="string_password">Password</string>
+    <string name="string_login">Login</string>
+    <string name="string_forgot_password">Forgot password ?</string>
+    <string name="string_or">or</string>
+</resources>
