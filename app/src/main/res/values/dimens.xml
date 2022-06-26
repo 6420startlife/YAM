@@ -7,4 +7,5 @@
     <dimen name="medium_text_size">24sp</dimen>
     <dimen name="small_text_size">16sp</dimen>
     <dimen name="icon_social_media">40dp</dimen>
+    <dimen name="high_dimen">32dp</dimen>
 </resources>

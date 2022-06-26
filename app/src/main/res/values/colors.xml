@@ -7,4 +7,5 @@
     <color name="ascent">#5EC7FD</color>
     <color name="white">#FFFFFF</color>
     <color name="bluePrimary_color">#1566e0</color>
+    <color name="black">#000000</color>
 </resources>
